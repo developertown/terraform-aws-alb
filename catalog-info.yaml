@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: terraform-aws-alb
+  description: AWS ALB terraform module
+  annotations:
+    github.com/project-slug: developertown/terraform-aws-alb
+  tags:
+    - terraform
+    - aws
+    - alb
+    - load-balancer
+spec:
+  type: terraform-module
+  lifecycle: production
+  owner: dt-devops
