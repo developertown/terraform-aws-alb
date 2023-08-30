@@ -16,6 +16,8 @@ module "access_logs" {
 }
 
 resource "aws_security_group" "alb" {
+  count = local.enabled ? 1 : 0
+
   name        = "${local.name}-sg"
   description = "Allow ALB inbound traffic"
   vpc_id      = var.vpc_id

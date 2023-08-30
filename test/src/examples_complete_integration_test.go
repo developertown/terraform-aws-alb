@@ -93,7 +93,7 @@ func TestExamplesCompleteDisabled(t *testing.T) {
 	t.Parallel()
 
 	rootFolder := "../../"
-	terraformFolderRelativeToRoot := "examples/complete/service"
+	terraformFolderRelativeToRoot := "examples/complete/load-balancer"
 
 	// Uncomment these when doing local testing if you need to skip any stages.
 	//os.Setenv("SKIP_apply", "true")
